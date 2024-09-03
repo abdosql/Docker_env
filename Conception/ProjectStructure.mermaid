@@ -1,0 +1,80 @@
+graph TD
+    A[Project Root] --> B[symfony]
+    A --> C[python_worker]
+    A --> D[nginx]
+    A --> E[rabbitmq]
+    A --> F[redis]
+    A --> G[postgresql]
+    A --> H[elk]
+    A --> I[prometheus]
+    A --> J[grafana]
+    A --> K[docker]
+    A --> L[tests]
+    A --> M[docs]
+    A --> N[.github]
+    A --> O[docker-compose.yml]
+    A --> P[.env]
+    A --> Q[README.md]
+
+    subgraph "Backend Services" 
+    B
+    C
+    end
+
+    subgraph "Infrastructure" 
+    D
+    E
+    F
+    G
+    end
+
+    subgraph "Monitoring & Logging" 
+    H
+    I
+    J
+    end
+
+    subgraph "Development & CI/CD" 
+    K
+    L
+    M
+    N
+    end
+
+    subgraph Symfony Application
+    B --> B1[config]
+    B --> B2[public]
+    B --> B3[src]
+    B --> B4[templates]
+    B --> B5[tests]
+    B3 --> B31[Controller]
+    B3 --> B32[Entity]
+    B3 --> B33[Repository]
+    B3 --> B34[Service]
+    B3 --> B35[MessageHandler]
+    B34 --> B341[Auth]
+    B34 --> B342[User]
+    B34 --> B343[Pricing]
+    B34 --> B344[API]
+    end
+
+    subgraph Python Worker
+    C --> C1[src]
+    C --> C2[tests]
+    C --> C3[requirements.txt]
+    C1 --> C11[models]
+    C1 --> C12[services]
+    C1 --> C13[utils]
+    end
+
+    classDef default fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef infrastructure fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef monitoring fill:#bfb,stroke:#333,stroke-width:2px;
+    classDef development fill:#fbb,stroke:#333,stroke-width:2px;
+    classDef config fill:#fffbe6,stroke:#333,stroke-width:2px;
+
+    class B,C default;
+    class D,E,F,G infrastructure;
+    class H,I,J monitoring;
+    class K,L,M,N development;
+    class O,P,Q config;

@@ -1,0 +1,71 @@
+project_root/
+│
+├── symfony/                    # Symfony application
+│   ├── config/
+│   ├── public/
+│   ├── src/
+│   │   ├── Controller/
+│   │   ├── Entity/
+│   │   ├── Repository/
+│   │   ├── Service/
+│   │   │   ├── Auth/
+│   │   │   ├── User/
+│   │   │   ├── Pricing/
+│   │   │   └── API/
+│   │   └── MessageHandler/
+│   ├── templates/
+│   └── tests/
+│
+├── python_worker/              # Python worker for OR-Tools
+│   ├── src/
+│   │   ├── models/
+│   │   ├── services/
+│   │   └── utils/
+│   ├── tests/
+│   └── requirements.txt
+│
+├── nginx/                      # Nginx configuration
+│   ├── conf.d/
+│   └── nginx.conf
+│
+├── rabbitmq/                   # RabbitMQ configuration
+│   └── definitions.json
+│
+├── redis/                      # Redis configuration
+│   └── redis.conf
+│
+├── postgresql/                 # PostgreSQL initialization scripts
+│   └── init.sql
+│
+├── elk/                        # ELK stack configuration
+│   ├── elasticsearch/
+│   ├── logstash/
+│   └── kibana/
+│
+├── prometheus/                 # Prometheus configuration
+│   └── prometheus.yml
+│
+├── grafana/                    # Grafana dashboards and datasources
+│   ├── dashboards/
+│   └── provisioning/
+│
+├── docker/                     # Docker-related files
+│   ├── symfony/
+│   ├── python/
+│   └── nginx/
+│
+├── tests/                      # Integration and e2e tests
+│   ├── api/
+│   └── e2e/
+│
+├── docs/                       # Project documentation
+│   ├── api/
+│   ├── architecture/
+│   └── deployment/
+│
+├── .github/                    # GitHub Actions workflows
+│   └── workflows/
+│
+├── docker-compose.yml          # Docker Compose configuration
+├── .env                        # Environment variables
+└── README.md                   # Project readme

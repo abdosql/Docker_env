@@ -1,0 +1,39 @@
+1. Initial setup and core infrastructure: 1-2 weeks
+   - Set up Symfony project, Docker environment
+   - Configure basic services (database, RabbitMQ, Redis)
+
+2. Core Symfony application development: 3-4 weeks
+   - Implement authentication and user management
+   - Develop basic API structure
+   - Create pricing service skeleton
+
+3. Python worker and OR-Tools integration: 2-3 weeks
+   - Set up Python environment
+   - Implement basic scheduling algorithm
+   - Integrate with RabbitMQ
+
+4. Message queue and asynchronous processing: 1-2 weeks
+   - Set up Symfony Messenger
+   - Implement job queuing and processing
+
+5. Basic admin dashboard: 1 week
+   - Set up EasyAdmin for basic CRUD operations
+
+6. MVP API and documentation: 1-2 weeks
+   - Implement core API endpoints
+   - Set up API documentation
+
+7. Basic monitoring and logging: 1 week
+   - Set up basic logging
+   - Implement simple monitoring
+
+8. Testing and bug fixing: 1-2 weeks
+   - Write essential unit tests
+   - Perform integration testing
+   - Fix critical bugs
+
+Total estimated time for MVP: 10-17 weeks (2.5-4 months)
+
+This timeline assumes you're working full-time on the project and doesn't account for potential roadblocks or additional features beyond the core MVP functionality. The actual time may vary based on the specific requirements of your MVP and any unexpected challenges that arise during development.
+
+Remember, an MVP should focus on core functionality to validate your business idea. You can iterate and add more advanced features after launching the initial version and gathering user feedback.
